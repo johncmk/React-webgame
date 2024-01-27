@@ -1,10 +1,11 @@
 import './App.css';
-import Gugudan from './Gugudan'
+// import Gugudan from './Gugudan'
+import GugudanHook from './GugudanHook'
 
 function App() {
   return (
     <div>
-      <Gugudan/>
+      <GugudanHook/>
     </div>
   );
 }
