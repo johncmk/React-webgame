@@ -40,8 +40,8 @@ class NumberBaseball extends Component
         {
             this.setState((prevState) => {
                 return {
-                    value: '홈런!',
-                    result: [...prevState.tries, { try: value, result: '홈런!' }],
+                    result: '홈런!',
+                    tries: [...prevState.tries, { try: value, result: '홈런!' }],
                 }
             });
             alert('게임을 다시 시작합니다!')

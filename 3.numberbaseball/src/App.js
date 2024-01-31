@@ -1,9 +1,10 @@
 import NumberBaseball from "./NumberBaseball";
+import NumberBaseballHook from './NumberBaseballHook'
 
 function App() {
   return (
         <>
-          <NumberBaseball/>
+          <NumberBaseballHook/>
         </>
   );
 }
