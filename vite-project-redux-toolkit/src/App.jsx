@@ -7,7 +7,7 @@ const counterSlice = createSlice({
   initialState: {value: 0},
   reducers: {
     up: (state, action) => {
-      state.value = state.value + action.step
+      state.value = state.value + action.payload // action.payload is '2'
     }
   }
 })
@@ -28,7 +28,7 @@ function Counter()
   return (
     <div>
       <button onClick={() => {
-        dispatch({type: 'counterSlice/up', step: 2})
+        dispatch(counterSlice.actions.up(2))
       }}>+</button> {count}
     </div>
   )
