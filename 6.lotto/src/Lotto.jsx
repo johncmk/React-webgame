@@ -4,8 +4,11 @@ import Ball from './Ball'
 function getWinNumbers()
 {
     console.log('getWinNumbers')
-    const candidate = Array(45).fill().map((v, i) => i + 1)
+    const candidate = Array(45)
+                        .fill()
+                        .map((v, i) => i + 1)
     const shuffle = [];
+
     while (candidate.length > 0)
     {
         shuffle.push(candidate.splice(Math.floor(Math.random() * candidate.length), 1)[0]);
@@ -62,10 +65,10 @@ class Lotto extends Component
         {
             this.runTimeouts();
         }
-        if (prevState.winNumbers !== this.state.winNumbers)
-        {
-            console.log('로또 숫자를 생성합니다.')
-        }
+        // if (prevState.winNumbers !== this.state.winNumbers)
+        // {
+        //     console.log('로또 숫자를 생성합니다.')
+        // }
     }
 
     componentWillUnmount()
@@ -104,3 +107,6 @@ class Lotto extends Component
 }
 
 export default Lotto;
+
+
+
